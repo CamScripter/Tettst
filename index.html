@@ -118,7 +118,7 @@
             border-color: var(--accent-green);
         }
 
-        /* Cloudflare Doğrulama Kutusu Simülasyonu */
+        /* Cloudflare Doğrulama Kutusu */
         .captcha-box {
             background-color: #181c19;
             border: 1px solid #2d332f;
@@ -181,6 +181,15 @@
         button:active {
             transform: scale(0.98);
         }
+
+        /* Durum Yazısı Alanı */
+        .status-text {
+            margin-top: 20px;
+            font-size: 14px;
+            font-weight: bold;
+            color: #e67e22;
+            display: none;
+        }
     </style>
 </head>
 <body>
@@ -214,8 +223,10 @@
                 </div>
             </div>
 
-            <button type="submit">Start Process 🚀</button>
+            <button type="submit" id="submitBtn">Start Process 🚀</button>
         </form>
+
+        <div id="statusMessage" class="status-text"></div>
     </div>
 
     <script src="script.js"></script>
