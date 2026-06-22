@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discord Mesaj Kutusu</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #2f3136;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            background-color: #36393f;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+            text-align: center;
+            width: 300px;
+        }
+        input[type="text"] {
+            width: 90%;
+            padding: 10px;
+            margin-top: 15px;
+            margin-bottom: 15px;
+            border: none;
+            border-radius: 4px;
+            background-color: #202225;
+            color: white;
+        }
+        button {
+            width: 97%;
+            padding: 10px;
+            background-color: #5865F2;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        button:hover {
+            background-color: #4752C4;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Discord'a Yaz</h2>
+    <form id="discordForm">
+        <input type="text" id="kullaniciMesaji" placeholder="Mesajınızı buraya yazın..." required>
+        <button type="submit">Gönder</button>
+    </form>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
